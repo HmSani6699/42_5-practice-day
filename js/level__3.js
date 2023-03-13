@@ -6,10 +6,16 @@ const inputFiledValue = (id) => {
     return value
 }
 
+//set item to localStorage
+const setKeyAndValueToLocalStorage = (key, value) => {
+    localStorage.setItem(key, value)
+}
+
 //Set name
 const addButton = () => {
     const name = inputFiledValue('name-filed');
-    localStorage.setItem('name', name)
+    setKeyAndValueToLocalStorage('name', name)
+
 }
 
 //Delete name
@@ -20,5 +26,21 @@ const deleteName = () => {
 //Set email
 const setEmail = () => {
     const email = inputFiledValue('email-filed');
-    localStorage.setItem('email', email)
+    setKeyAndValueToLocalStorage('email', email)
+}
+
+//Delete email
+const deleteEmail = () => {
+    localStorage.removeItem('email')
+}
+
+//Set message
+const setMessage = () => {
+    const message = inputFiledValue('message-filed')
+    setKeyAndValueToLocalStorage('message', message)
+}
+
+//Delete message
+const deleteMessage = () => {
+    localStorage.removeItem('message')
 }
