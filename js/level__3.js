@@ -44,3 +44,9 @@ const setMessage = () => {
 const deleteMessage = () => {
     localStorage.removeItem('message')
 }
+
+
+// Resat all information in localStorage 
+const resatAllInformation = () => {
+    localStorage.clear()
+}
