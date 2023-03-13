@@ -22,6 +22,14 @@
             color: white;
         }
 
+        table {
+            border-spacing: 0 10px;
+        }
+
+        .title {
+            color: white;
+        }
+
         button {
             color: black;
             padding: 6px;
@@ -70,25 +78,32 @@
                 <article>
                     <table>
                         <tr>
-                            <td>Name</td>
+                            <td class="title">Name
+                            </td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="text"
-                                    placeholder="Enter your name">
+                                    placeholder="Enter your name"
+                                    id="name-filed">
                             </td>
                             <td></td>
                             <td></td>
-                            <td><button>Delete
+                            <td><button
+                                    onclick="deleteName()">Delete
                                     name</button>
                             </td>
-                            <td><button>Sent
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="addButton()">Sent
                                     name</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Email</td>
+                            <td class="title">
+                                Email</td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -101,12 +116,15 @@
                             <td><button>Delete
                                     email</button>
                             </td>
+                            <td></td>
+                            <td></td>
                             <td><button>Sent
                                     email</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Message</td>
+                            <td class="title">
+                                Message</td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -120,6 +138,8 @@
                             <td><button>Delete
                                     message</button>
                             </td>
+                            <td></td>
+                            <td></td>
                             <td><button>Sent
                                     message</button>
                             </td>
