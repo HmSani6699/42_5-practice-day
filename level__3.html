@@ -8,10 +8,131 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Simple data load</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        body h1 {
+            color: white;
+        }
+
+        button {
+            color: black;
+            padding: 6px;
+            border-radius: 15px;
+            border: none;
+            width: 120px;
+            cursor: pointer;
+            border: 2px solid coral;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: coral;
+            color: white;
+        }
+
+        input,
+        textarea {
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        #resat-box {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #resat-box button {
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            color: red;
+            border: none;
+        }
+    </style>
+
 </head>
 
 <body>
-
+    <div>
+        <header>
+            <h1>Simple data load in LocalStorage
+            </h1>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"
+                                    placeholder="Enter your name">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Delete
+                                    name</button>
+                            </td>
+                            <td><button>Sent
+                                    name</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"
+                                    placeholder="Enter your email">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Delete
+                                    email</button>
+                            </td>
+                            <td><button>Sent
+                                    email</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name=""
+                                    id=""
+                                    placeholder="message"></textarea>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button>Delete
+                                    message</button>
+                            </td>
+                            <td><button>Sent
+                                    message</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="resat-box">
+                        <button
+                            id="resat-btn">Resat</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
     <!-- js -->
     <script src="js/level__3.js"></script>
 </body>
