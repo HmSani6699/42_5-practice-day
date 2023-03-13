@@ -6,7 +6,16 @@ const inputFiledValue = (id) => {
     return value
 }
 
+//Set name
 const addButton = () => {
     const name = inputFiledValue('name-filed');
     localStorage.setItem('name', name)
 }
+
+//Delete name
+const deleteName = () => {
+    localStorage.removeItem('name')
+}
+
+//Set email
+
