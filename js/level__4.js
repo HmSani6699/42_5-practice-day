@@ -6,6 +6,11 @@ const inputFiledValue = (id) => {
     return value
 }
 
+//Set input value
+const setInputValue = (id, value) => {
+    document.getElementById(id).value = value
+}
+
 //set item to localStorage
 const setKeyAndValueToLocalStorage = (key, value) => {
     localStorage.setItem(key, value)
@@ -57,7 +62,24 @@ const sentAllInformation = () => {
     let email = localStorage.getItem('email');
     let message = localStorage.getItem('message');
 
-    const person = { name: `${name}`, email: `${email}`, message: `${message}` };
-    const personToString = JSON.stringify(person)
-    setKeyAndValueToLocalStorage('person', personToString)
+    if (name !== null || email !== null || message !== null) {
+        const person = { name: `${name}`, email: `${email}`, message: `${message}` };
+        const personToString = JSON.stringify(person)
+        setKeyAndValueToLocalStorage('person', personToString)
+    }
 }
+
+const getPersonInfoInLocalStorage = () => {
+    let person = {}
+    const getPersonInfo = localStorage.getItem('person');
+
+    if (getPersonInfo) {
+        return person = JSON.parse(getPersonInfo)
+    }
+    return person
+}
+
+const setPersonAllInputFiled = () => {
+    const allInfoInPerson = getPersonInfoInLocalStorage();
+}
+setPersonAllInputFiled()
