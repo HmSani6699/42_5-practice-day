@@ -18,4 +18,7 @@ const deleteName = () => {
 }
 
 //Set email
-
+const setEmail = () => {
+    const email = inputFiledValue('email-filed');
+    localStorage.setItem('email', email)
+}
