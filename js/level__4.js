@@ -58,6 +58,6 @@ const sentAllInformation = () => {
     let message = localStorage.getItem('message');
 
     const person = { name: `${name}`, email: `${email}`, message: `${message}` };
-
-    console.log(person)
+    const personToString = JSON.stringify(person)
+    setKeyAndValueToLocalStorage('person', personToString)
 }
