@@ -50,3 +50,14 @@ const deleteMessage = () => {
 const resatAllInformation = () => {
     localStorage.clear()
 }
+
+// sent all information in localStorage
+const sentAllInformation = () => {
+    let name = localStorage.getItem('name');
+    let email = localStorage.getItem('email');
+    let message = localStorage.getItem('message');
+
+    const person = { name: `${name}`, email: `${email}`, message: `${message}` };
+
+    console.log(person)
+}
