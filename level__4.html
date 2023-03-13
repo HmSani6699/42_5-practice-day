@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Simple data load</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        body h1 {
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            border-spacing: 0 10px;
+        }
+
+        .title {
+            color: white;
+        }
+
+        button {
+            color: black;
+            padding: 6px;
+            border-radius: 15px;
+            border: none;
+            width: 120px;
+            cursor: pointer;
+            border: 2px solid coral;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: coral;
+            color: white;
+        }
+
+        input,
+        textarea {
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        #resat-box {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #resat-box button {
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            color: red;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Please Contact me
+            </h1>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <table>
+                        <tr>
+                            <td class="title">Name
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"
+                                    placeholder="Enter your name"
+                                    id="name-filed">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="deleteName()">Delete
+                                    name</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="addButton()">Sent
+                                    name</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                Email</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"
+                                    placeholder="Enter your email"
+                                    id="email-filed">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="deleteEmail()">Delete
+                                    email</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="setEmail()">Sent
+                                    email</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">
+                                Message</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name=""
+                                    id="message-filed"
+                                    placeholder="message"></textarea>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="deleteMessage()">Delete
+                                    message</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td><button
+                                    onclick="setMessage()">Sent
+                                    message</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="resat-box">
+                        <button>Sent</button>
+                        <button id="resat-btn"
+                            onclick="resatAllInformation()">Resat</button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <!-- js -->
+    <script src="js/level__4.js"></script>
+</body>
+
+</html>
