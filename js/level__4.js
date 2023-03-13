@@ -79,7 +79,13 @@ const getPersonInfoInLocalStorage = () => {
     return person
 }
 
-const setPersonAllInputFiled = () => {
-    const allInfoInPerson = getPersonInfoInLocalStorage();
-}
-setPersonAllInputFiled()
+// const setPersonAllInputFiled = () => {
+//     const allInfoInPerson = getPersonInfoInLocalStorage();
+//     if (allInfoInPerson !== {}) {
+//         const key = Object.keys(allInfoInPerson);
+//         setInputValue("name-filed", allInfoInPerson[key[0]])
+//         setInputValue("email-filed", allInfoInPerson[key[1]])
+//         setInputValue("message-filed", allInfoInPerson[key[2]])
+//     }
+// }
+// setPersonAllInputFiled()
