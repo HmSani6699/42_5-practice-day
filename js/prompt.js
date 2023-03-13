@@ -1,3 +1,5 @@
 const promptBtn = () => {
-    console.log('ami vallo asi')
+    const promptValueString = prompt()
+    const promptValue = parseFloat(promptValueString);
+    alert(isNaN(promptValue) ? 'please enter your number' : promptValue + 200)
 }
